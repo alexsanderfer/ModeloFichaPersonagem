@@ -1,0 +1,82 @@
+/** TEMPLATE FICHA BY LOOLA RESOURCES 2021 **/
+
+#ficha-personagem-eg {--cortp1:#0c0c0d;--cortp2:#0000004d;--cortp3:#010101;margin:auto;width:600px;height:600px;overflow:hidden;border:1px solid #333;position:relative;}
+#ficha-personagem-eg .pgeg { position: absolute; background: var(--cortp1);width: -webkit-fill-available; height: -webkit-fill-available;padding: 20px; color: #aaa; font: 300 13px Inter;left:0px;transition: all ease 1s; }
+#ficha-personagem-eg br{display:none;}
+#ficha-personagem-eg .ativarficha {left:-600px!important;transition: all ease 1s;}
+#ficha-personagem-eg input {display:none;}
+#ficha-personagem-eg label { position: absolute; z-index: 10; color: #fff; width: 15px; border-radius: 100%; background: var(--cor-principal); height: 15px; display: flex; padding: 10px; align-items: center; justify-content: center; line-height: 0px; font-size: 20px; border: 1px solid var(--cortp3); }
+#ficha-personagem-eg label:after { content: attr(title);position: absolute; margin-top: -57px; left: 0px;text-transform: uppercase; font: 800 8px Inter;width:120px;overflow:hidden;font-size:0;}
+#ficha-personagem-eg label:hover:after { content: attr(title); position: absolute; margin-top: -57px; left: 0px; text-transform: uppercase; font: 800 8px Inter; width: 150px; z-index: 15;transition:ease 1s;}
+
+#página-2p:checked ~ .segunda-página, #página-3p:checked ~ .terceira-página, #página-4p:checked ~ .quarta-página, #página-5p:checked ~ .quinta-página, #página-6p:checked ~ .sexta-página{z-index:3;}
+
+#ficha-personagem-eg .primeira-página {display:flex;flex-direction:column;align-items:center;justify-content: flex-end;background: var(--cor-principal);z-index:11;padding:0px;}
+#ficha-personagem-eg .primeira-página img { object-fit: cover; width: 600px; height: 600px; mix-blend-mode: hard-light; filter: grayscale(1); }
+#ficha-personagem-eg .primeira-página div { position: absolute; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; text-align: right; gap: 10px; color: #aaa; padding: 0px 50px 120px 50px; }
+#ficha-personagem-eg .primeira-página div nome-personagem { color: #fafafa; text-transform: uppercase; font: 800 40px Inter; letter-spacing: -2px; line-height: 35px; }
+#ficha-personagem-eg .primeira-página div frase { font: 400 12px inter; text-transform: lowercase; }
+
+#ficha-personagem-eg .segunda-página { display: grid; grid-template-columns: 50% 50%; grid-template-rows: 180px auto; gap: 5px; width: -webkit-fill-available; height: -webkit-fill-available; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] { grid-column-start: 1; grid-column-end: 3; display: flex; flex-wrap: wrap;gap:5px; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div { display: flex; gap: 5px; align-items: center; background: var(--cortp2); border: 1px solid var(--cortp3); border-radius: 5px; padding-right: 5px; overflow: hidden; flex: 30%; height: 30px;position:relative; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div:after { content: attr(title); font: 900 7px Inter; text-transform: uppercase; position: absolute; right: 5px; top: 5px; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div:before { content: "\f2bd"; font-family: 'Font Awesome 5 Pro'; display: flex; align-items: center; justify-content: center; padding: 10px; width: 10px; height: 10px; background: var(--cor-principal); font-size: 18px; line-height: 0px; margin: 0px; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Espécie"]:before {content: "\f2bd";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Sexo"]:before {content: "\f228";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Cidade"]:before {content: "\f1fd";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Classe Principal"]:before {content: "\f71d";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Sub-classe"]:before {content: "\f71c";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Rank"]:before {content: "\f0cb";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Linhagem"]:before {content: "\f06d";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Alinhamento"]:before {content: "\f6ad";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div[title="Equipe [Guilda]"]:before {content: "\f6a5";}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"]  .fama { flex: 100%!important; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"]  .fama:before {display:none;}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div.fama span {display:flex;align-items:center;gap:5px}
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div span:before { content: attr(title); font: 900 7px Inter; text-transform: uppercase; position: relative; padding: 5px 10px; color: #fff; }
+#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div span[title="Boa"]:before {background:green;} #ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div span[title="Má"]:before {background:red;}#ficha-personagem-eg .segunda-página .infomações[title="Básicas"] div span[title="Neutra"]:before {background:blue;}
+
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"], #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"] { border: 1px solid var(--cortp3); background: var(--cortp2); padding: 10px; }
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"]:before, #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"]:before { content: attr(title); width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 500 12px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cortp1); text-transform: uppercase; letter-spacing: 2px; }
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"] div, #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"] div{text-align:justify;}
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"] div:last-of-type, #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"] div:last-of-type {overflow:auto;    height: 205px;}
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"]  div:before, #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"] div:before{content: attr(title) ":"; font: 900 10px Inter; text-transform: uppercase;color:var(--cor-principal);}
+#ficha-personagem-eg .segunda-página .infomações[title="Físicas"] div:last-of-type br, #ficha-personagem-eg .segunda-página .infomações[title="Psicológicas"] div:last-of-type br{display:block;}
+
+#ficha-personagem-eg .terceira-página div:before { content:"História do Personagem"; width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 900 15px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cor-principal); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; mix-blend-mode: hard-light; }
+#ficha-personagem-eg .terceira-página div texto { border: 1px solid var(--cortp3); display: block; padding: 20px; text-align: justify; height: 460px; overflow: auto; }
+#ficha-personagem-eg .terceira-página div texto br{display:block;}
+
+#ficha-personagem-eg .quarta-página { display: grid; grid-template-rows: 50px 220px auto; grid-template-columns: 50% 50%;gap:5px; }
+
+#ficha-personagem-eg .quarta-página:before { content: attr(title); width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 900 12px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cor-principal); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; mix-blend-mode: hard-light;grid-column-start: 1; grid-column-end: 3;}
+#ficha-personagem-eg .quarta-página .informações { border: 1px solid var(--cortp3); display: block;padding:10px;}
+#ficha-personagem-eg .quarta-página .informações[title="Atributos"] { display: flex; flex-wrap: wrap; gap: 5px; align-items: flex-start; justify-content: center; line-height: 0px; height: 201px;grid-column-start: 1; grid-column-end: 3; }
+#ficha-personagem-eg .quarta-página .informações span { height: 70px; width: 70px; display: flex; margin-top: 10px; border-radius: 25%; border: 1px solid var(--cortp3); align-items: center; justify-content: center; background: var(--cor-principal) url(https://wallpapercave.com/wp/wp4888249.jpg)center/cover; background-blend-mode: luminosity; color: #fff; position: relative; }
+#ficha-personagem-eg .quarta-página .informações span:before { content: attr(pontos); color: #fff; mix-blend-mode: normal; font: 900 30px Inter; }
+#ficha-personagem-eg .quarta-página .informações span:after { content: attr(title); color: #fff; mix-blend-mode: normal; font: 500 8px Inter;position:absolute;text-align:center;bottom:-15px;text-transform:uppercase;}
+
+#ficha-personagem-eg .quarta-página .informações[title="Especificações"]:before, #ficha-personagem-eg .quarta-página .informações[title="Proficiências e Defeitos"]:before { content: attr(title); width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 900 12px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cor-principal); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; mix-blend-mode: hard-light; }
+#ficha-personagem-eg .quarta-página .informações div:before {content: attr(title) ":"; font: 900 10px Inter; text-transform: uppercase; color: var(--cor-principal);}
+#ficha-personagem-eg .quarta-página .informações div br{display:block;}
+#ficha-personagem-eg b {font: 900 10px Inter; text-transform: uppercase; color: var(--cor-principal)!important;}
+#ficha-personagem-eg .quarta-página .informações[title="Proficiências e Defeitos"] div{overflow:auto;height: 190px;}
+#ficha-personagem-eg .quarta-página .informações[title="Proficiências e Defeitos"] div br{display:block;}
+
+#ficha-personagem-eg .quinta-página:before { content: attr(title); width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 900 12px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cor-principal); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; mix-blend-mode: hard-light; }
+#ficha-personagem-eg .quinta-página .informações div br{display:block;}
+#ficha-personagem-eg .quinta-página .informações div { border: 1px solid var(--cortp3); display: block; padding: 20px; text-align: justify; height: 202px; overflow: auto; margin-bottom: 10px; }
+#ficha-personagem-eg .quinta-página .informações[title="Arsenal"] div{display:flex;flex-wrap:wrap;gap:5px;}
+#ficha-personagem-eg .quinta-página .informações div item { border: 1px solid var(--cortp3); background: var(--cortp2); padding: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column; width: 50px; height: 50px; border-radius: 7%; font-size: 24px;position:relative;}
+#ficha-personagem-eg .quinta-página .informações div item:before { content: attr(title); font: 900 8px Inter; text-transform: uppercase; position: absolute; top: -6px; text-align: left; background: var(--cor-principal); border: 1px solid var(--cortp3); line-height: 9px; padding: 2px; }
+#ficha-personagem-eg .quinta-página .informações div item:after { content: attr(quantidade); position: absolute; background: var(--cor-principal); font: 900 13px Inter; width: 10px; height: 10px; padding: 5px; display: flex; align-items: center; justify-content: center; border-radius: 100%; bottom: -5px; right: -5px; }
+
+#ficha-personagem-eg .sexta-página:before, #ficha-personagem-eg .sexta-página div[title="Anotações"]:before { content: attr(title); width: -webkit-fill-available; display: flex; align-items: center; justify-content: center; font: 900 12px Roboto; padding: 10px; border: 1px solid var(--cortp3); background: var(--cor-principal); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; mix-blend-mode: hard-light; }
+#ficha-personagem-eg .sexta-página div[title="Anotações"] texto{border: 1px solid var(--cortp3); display: block; padding: 20px; text-align: justify; height: 200px; overflow: auto;}
+#ficha-personagem-eg .sexta-página div[title="Anotações"] texto br{display:block;}
+#ficha-personagem-eg .sexta-página div[title="Conquistas"]{border: 1px solid var(--cortp3); display: block; padding: 20px; text-align: justify; height: 150px; overflow: auto;margin-bottom:5px;display:flex;flex-wrap:wrap;gap:5px;}
+#ficha-personagem-eg .sexta-página div[title="Conquistas"] medalha {border: 1px solid var(--cortp3); background: var(--cortp2); padding: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column; width: 50px; height: 50px; border-radius: 7%; font-size: 24px; position: relative;    transition: ease 1s;}
+#ficha-personagem-eg .sexta-página div[title="Conquistas"] medalha:before { content: attr(titulo); font: 900 8px Inter; text-transform: uppercase; position: absolute; bottom: -30px; text-align: center; background: var(--cor-principal); border: 1px solid var(--cortp3); line-height: 9px; padding: 2px; }
+#ficha-personagem-eg .sexta-página div[title="Conquistas"] medalha:after {content:attr(motivo);border: 1px solid var(--cortp3); background: var(--cortp1); padding: 5px; display: flex; align-items: flex-start; justify-content: center; flex-direction: column; width: 55px; text-align: justify; height: 55px; border-radius: 7%; font: 200 10px Arial, Verdana; position: absolute;transition: ease 1s;opacity:0}
+#ficha-personagem-eg .sexta-página div[title="Conquistas"] medalha:hover:after {transition: ease 1s;opacity:1;}
